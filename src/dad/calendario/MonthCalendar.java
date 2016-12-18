@@ -68,9 +68,7 @@ public class MonthCalendar extends GridPane {
 
 		}
 		
-		System.out.println("MES: "+this.month.get());
-		System.out.println("HOY "+LocalDate.now().getDayOfMonth());
-		System.out.println("PRIEMR DIA DE MES: "+DateUtils.firstDay(this.year.get(), this.month.get()));
+		
 
 		daysLabel = new Label[6 * 7];
 		for (int col = 0; col < 7; col++) {
@@ -107,10 +105,12 @@ public class MonthCalendar extends GridPane {
 		Date day = DateUtils.day(year.get(), month.get(), 1);
 		monthNameLabel.setText(FORMATTER.format(day));
 
+		int pos = LocalDate.now().getDayOfMonth() + first - 1;
 		if (this.month.get() == LocalDate.now().getMonthValue() && this.year.get() == LocalDate.now().getYear()) {
-			daysLabel[LocalDate.now().getDayOfMonth()].getStyleClass().add("today");
+			System.out.println(pos);
+			daysLabel[pos].getStyleClass().add("today");
 		} else {
-			daysLabel[LocalDate.now().getDayOfMonth()].getStyleClass().removeAll("today");
+			daysLabel[LocalDate.now().getDayOfMonth()+2].getStyleClass().removeAll("today");
 		}
 
 	}

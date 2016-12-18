@@ -48,9 +48,9 @@ public class CalendarioController {
 
 		anteriorButton.getStyleClass().add("changeButton");
 		siguienteButton.getStyleClass().add("changeButton");
-		
-		anisoLabel.getStyleClass().add("year");	
-		
+
+		anisoLabel.getStyleClass().add("year");
+
 		calendario.setAnio(LocalDate.now().getYear());
 
 		int mes = 1;
@@ -58,7 +58,7 @@ public class CalendarioController {
 		for (int i = 0; i < 4; i++) {
 			for (int j = 0; j < 3; j++) {
 				MonthCalendar monthCalendar = new MonthCalendar(calendario.getAnio(), mes);
-				mesesPanel.add(monthCalendar, j, i);
+				mesesPanel.add(monthCalendar, j,i);
 				listaMeses.add(monthCalendar);
 				monthCalendar.onModelChanged();
 				mes++;
