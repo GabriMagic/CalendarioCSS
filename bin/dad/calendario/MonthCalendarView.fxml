@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import java.util.ArrayList?>
+
+<fx:root prefHeight="200.0" prefWidth="200.0" type="GridPane" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+   </rowConstraints>
+   <children>
+      <VBox alignment="CENTER" spacing="5.0" GridPane.columnSpan="7">
+         <children>
+            <Label fx:id="monthNameLabel" alignment="CENTER" contentDisplay="CENTER" text="NOMBREMES" />
+            <Separator prefWidth="200.0" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <Label fx:id="lunesLabel" alignment="CENTER" text="-" GridPane.rowIndex="1" />
+      <Label fx:id="dia1" alignment="CENTER" text="-" GridPane.rowIndex="2" />
+      <Label fx:id="dia8" alignment="CENTER" text="-" GridPane.rowIndex="3" />
+      <Label fx:id="dia15" alignment="CENTER" text="-" GridPane.rowIndex="4" />
+      <Label fx:id="dia22" alignment="CENTER" text="-" GridPane.rowIndex="5" />
+      <Label fx:id="dia29" alignment="CENTER" text="-" GridPane.rowIndex="6" />
+      <Label fx:id="dia36" alignment="CENTER" text="-" GridPane.rowIndex="7" />
+      <Label fx:id="martesLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label fx:id="dia2" text="-" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label fx:id="dia9" text="-" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label fx:id="dia16" text="-" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Label fx:id="dia23" text="-" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Label fx:id="dia30" text="-" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Label fx:id="dia37" text="-" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Label fx:id="miercolesLabel" text="-" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label fx:id="dia3" text="-" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Label fx:id="dia10" text="-" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Label fx:id="dia17" text="-" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Label fx:id="dia24" text="-" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Label fx:id="dia31" text="-" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+      <Label fx:id="dia38" text="-" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+      <Label fx:id="juevesLabel" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Label fx:id="dia4" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Label fx:id="dia11" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Label fx:id="dia18" text="-" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <Label fx:id="dia25" text="-" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+      <Label fx:id="dia32" text="-" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+      <Label fx:id="dia39" text="-" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+      <Label fx:id="viernesLabel" text="-" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+      <Label fx:id="dia5" text="-" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+      <Label fx:id="dia12" text="-" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+      <Label fx:id="dia19" text="-" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+      <Label fx:id="dia26" text="-" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+      <Label fx:id="dia33" text="-" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+      <Label fx:id="dia40" text="-" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+      <Label fx:id="sabadoLabel" text="-" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+      <Label fx:id="dia6" text="-" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+      <Label fx:id="dia13" text="-" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+      <Label fx:id="dia20" text="-" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+      <Label fx:id="dia27" text="-" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+      <Label fx:id="dia34" text="-" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+      <Label fx:id="dia41" text="-" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+      <Label fx:id="domingoLabel" text="-" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+      <Label fx:id="dia7" text="-" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+      <Label fx:id="dia14" text="-" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+      <Label fx:id="dia21" text="-" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+      <Label fx:id="dia28" text="-" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+      <Label fx:id="dia35" text="-" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+      <Label fx:id="dia42" text="-" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+      
+      <fx:define>
+        <ArrayList fx:id="diasLabel">
+            <fx:reference source="dia1" />
+            <fx:reference source="dia2" />
+            <fx:reference source="dia3" />
+            <fx:reference source="dia4" />
+            <fx:reference source="dia5" />
+            <fx:reference source="dia6" />
+            <fx:reference source="dia7" />
+            <fx:reference source="dia8" />
+            <fx:reference source="dia9" />
+            <fx:reference source="dia10" />
+            <fx:reference source="dia11" />
+            <fx:reference source="dia12" />
+            <fx:reference source="dia13" />
+            <fx:reference source="dia14" />
+            <fx:reference source="dia15" />
+            <fx:reference source="dia16" />
+            <fx:reference source="dia17" />
+            <fx:reference source="dia18" />
+            <fx:reference source="dia19" />
+            <fx:reference source="dia20" />
+            <fx:reference source="dia21" />
+            <fx:reference source="dia22" />
+            <fx:reference source="dia23" />
+            <fx:reference source="dia24" />
+            <fx:reference source="dia25" />
+            <fx:reference source="dia26" />
+            <fx:reference source="dia27" />
+            <fx:reference source="dia28" />
+            <fx:reference source="dia29" />
+            <fx:reference source="dia30" />
+            <fx:reference source="dia31" />
+            <fx:reference source="dia32" />
+            <fx:reference source="dia33" />
+            <fx:reference source="dia34" />
+            <fx:reference source="dia35" />
+            <fx:reference source="dia36" />
+            <fx:reference source="dia37" />
+            <fx:reference source="dia38" />
+            <fx:reference source="dia39" />
+            <fx:reference source="dia40" />
+            <fx:reference source="dia41" />
+            <fx:reference source="dia42" />
+        </ArrayList>
+
+        <ArrayList fx:id="semanaLabel">
+            <fx:reference source="lunesLabel" />
+            <fx:reference source="martesLabel" />
+            <fx:reference source="miercolesLabel" />
+            <fx:reference source="juevesLabel" />
+            <fx:reference source="viernesLabel" />
+            <fx:reference source="sabadoLabel" />
+            <fx:reference source="domingoLabel" />
+        </ArrayList>
+      </fx:define>
+      
+      
+   </children>
+</fx:root>
