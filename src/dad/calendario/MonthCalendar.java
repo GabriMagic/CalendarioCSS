@@ -103,9 +103,8 @@ public class MonthCalendar extends GridPane {
 		Date day = DateUtils.day(year.get(), month.get(), 1);
 		monthNameLabel.setText(FORMATTER.format(day));
 
-		int pos = LocalDate.now().getDayOfMonth() + first - 1;
 		if (this.month.get() == LocalDate.now().getMonthValue() && this.year.get() == LocalDate.now().getYear()) {
-			daysLabel[pos].getStyleClass().add("today");
+			daysLabel[LocalDate.now().getDayOfMonth() + 2].getStyleClass().add("today");
 		} else {
 			daysLabel[LocalDate.now().getDayOfMonth() + 2].getStyleClass().removeAll("today");
 		}

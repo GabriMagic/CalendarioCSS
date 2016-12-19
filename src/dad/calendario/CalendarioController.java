@@ -3,7 +3,6 @@ package dad.calendario;
 import java.io.IOException;
 import java.time.LocalDate;
 
-import javafx.beans.binding.Bindings;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -13,7 +12,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
-import javafx.util.converter.NumberStringConverter;
 
 public class CalendarioController {
 

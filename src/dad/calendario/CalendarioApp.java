@@ -17,7 +17,7 @@ public class CalendarioApp extends Application {
 		
 		primaryStage.setTitle("Calendario");
 		primaryStage.getIcons().add(new Image("/dad/calendario/resources/calendar.png"));
-		primaryStage.setScene(new Scene(calendarioController.getView(), 700, 600));
+		primaryStage.setScene(new Scene(calendarioController.getView(), 700, 650));
 		primaryStage.show();
 	}
 	
