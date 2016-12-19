@@ -2,8 +2,6 @@ package dad.calendario;
 
 import java.io.IOException;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 import javafx.beans.binding.Bindings;
 import javafx.collections.FXCollections;
@@ -36,14 +34,13 @@ public class CalendarioController {
 	@FXML
 	private Button anteriorButton;
 
-	private List<MonthCalendar> lista;
 	private ObservableList<MonthCalendar> listaMeses;
 
 	public CalendarioController(CalendarioApp app) {
 
 		calendario = new CalendarioModel();
-		lista = new ArrayList<>();
-		listaMeses = FXCollections.observableArrayList(lista);
+		listaMeses = FXCollections.observableArrayList();
+
 		FXMLloads();
 
 		anteriorButton.getStyleClass().add("changeButton");
@@ -58,7 +55,7 @@ public class CalendarioController {
 		for (int i = 0; i < 4; i++) {
 			for (int j = 0; j < 3; j++) {
 				MonthCalendar monthCalendar = new MonthCalendar(calendario.getAnio(), mes);
-				mesesPanel.add(monthCalendar, j,i);
+				mesesPanel.add(monthCalendar, j, i);
 				listaMeses.add(monthCalendar);
 				monthCalendar.onModelChanged();
 				mes++;
@@ -68,10 +65,12 @@ public class CalendarioController {
 	}
 
 	public void bind() {
-		for (MonthCalendar mesCalendar : listaMeses) {
-			mesCalendar.yearProperty().bind(calendario.anioProperty());
+
+		for (int i = 0; i < listaMeses.size(); i++) {
+			listaMeses.get(i).yearProperty().bind(calendario.anioProperty());
 		}
-		Bindings.bindBidirectional(anisoLabel.textProperty(), calendario.anioProperty(), new NumberStringConverter());
+
+		anisoLabel.textProperty().bind(calendario.anioProperty().asString());
 	}
 
 	@FXML
